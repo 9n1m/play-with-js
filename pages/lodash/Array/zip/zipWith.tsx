@@ -1,17 +1,17 @@
 import type { NextPage } from 'next'
-import { fromPairs } from 'lodash'
+import { zipWith } from 'lodash'
 
 function runDemo1() {
   debugger
-  const array = [['a', 1], ['b', 2]]
-  const newArray = fromPairs(array)
+  const arrays = [[1, 2], [10, 20], [100, 200]]
+  const newArray = zipWith(...arrays, (a, b, c) => a + b + c)
   console.log(newArray)
 }
 
 const Page: NextPage = () => {
   return (
     <>
-      <h2 className='title'>fromPairs</h2>
+      <h2 className='title'>zipWith</h2>
       <div className='block buttons'>
         <button className='button is-primary' onClick={() => runDemo1()}>runDemo1</button>
       </div>

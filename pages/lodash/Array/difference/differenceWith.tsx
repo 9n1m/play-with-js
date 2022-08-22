@@ -5,7 +5,6 @@ function runDemo1() {
   debugger
   const array = [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }]
   const newArray = differenceWith(array, [{ 'x': 1, 'y': 2 }], isEqual)
-  console.log(array)
   console.log(newArray)
 }
 

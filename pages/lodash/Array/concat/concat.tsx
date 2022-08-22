@@ -5,7 +5,6 @@ function runDemo1() {
   debugger
   const array = [1]
   const newArray = concat(array, 2, [3], [[4]])
-  console.log(array)
   console.log(newArray)
 }
 

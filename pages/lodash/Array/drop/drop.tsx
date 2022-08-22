@@ -5,7 +5,6 @@ function runDemo1() {
   debugger
   const array = [1, 2, 3]
   const newArray = drop(array)
-  console.log(array)
   console.log(newArray)
 }
 
@@ -13,7 +12,6 @@ function runDemo2() {
   debugger
   const array = [1, 2, 3]
   const newArray = drop(array, 2)
-  console.log(array)
   console.log(newArray)
 }
 
@@ -21,7 +19,6 @@ function runDemo3() {
   debugger
   const array = [1, 2, 3]
   const newArray = drop(array, 5)
-  console.log(array)
   console.log(newArray)
 }
 

@@ -5,7 +5,6 @@ function runDemo1() {
   debugger
   const array = ['a', 'b', 'c']
   const newArray = join(array, '~')
-  console.log(array)
   console.log(newArray)
 }
 

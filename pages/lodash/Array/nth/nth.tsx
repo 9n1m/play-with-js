@@ -5,7 +5,6 @@ function runDemo1() {
   debugger
   const array = ['a', 'b', 'c', 'd']
   const newArray = nth(array, 1)
-  console.log(array)
   console.log(newArray)
 }
 
@@ -13,7 +12,6 @@ function runDemo2() {
   debugger
   const array = ['a', 'b', 'c', 'd']
   const newArray = nth(array, -2)
-  console.log(array)
   console.log(newArray)
 }
 

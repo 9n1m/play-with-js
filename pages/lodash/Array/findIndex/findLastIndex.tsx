@@ -11,31 +11,27 @@ function runDemo1() {
   debugger
   const array = cloneDeep(users)
   const newArray = findLastIndex(array, o => o.user == 'pebbles')
-  console.log(array)
   console.log(newArray)
 }
 
 function runDemo2() {
   debugger
   const array = cloneDeep(users)
-  const newArray = findLastIndex(users, { 'user': 'barney', 'active': true })
-  console.log(array)
+  const newArray = findLastIndex(array, { 'user': 'barney', 'active': true })
   console.log(newArray)
 }
 
 function runDemo3() {
   debugger
   const array = cloneDeep(users)
-  const newArray = findLastIndex(users, ['active', false])
-  console.log(array)
+  const newArray = findLastIndex(array, ['active', false])
   console.log(newArray)
 }
 
 function runDemo4() {
   debugger
   const array = cloneDeep(users)
-  const newArray = findLastIndex(users, 'active')
-  console.log(array)
+  const newArray = findLastIndex(array, 'active')
   console.log(newArray)
 }
 

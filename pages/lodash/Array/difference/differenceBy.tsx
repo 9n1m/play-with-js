@@ -5,7 +5,6 @@ function runDemo1() {
   debugger
   const array = [2.1, 1.2]
   const newArray = differenceBy(array, [2.3, 3.4], Math.floor)
-  console.log(array)
   console.log(newArray)
 }
 
@@ -13,7 +12,6 @@ function runDemo2() {
   debugger
   const array = [{ 'x': 2 }, { 'x': 1 }]
   const newArray = differenceBy(array, [{ 'x': 1 }], 'x')
-  console.log(array)
   console.log(newArray)
 }
 

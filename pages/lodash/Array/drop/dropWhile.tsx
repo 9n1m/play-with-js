@@ -11,7 +11,6 @@ function runDemo1() {
   debugger
   const array = cloneDeep(users)
   const newArray = dropWhile(array, o => !o.active)
-  console.log(array)
   console.log(newArray)
 }
 
@@ -19,7 +18,6 @@ function runDemo2() {
   debugger
   const array = cloneDeep(users)
   const newArray = dropWhile(users, { 'user': 'barney', 'active': false })
-  console.log(array)
   console.log(newArray)
 }
 
@@ -27,7 +25,6 @@ function runDemo3() {
   debugger
   const array = cloneDeep(users)
   const newArray = dropWhile(users, ['active', false])
-  console.log(array)
   console.log(newArray)
 }
 
@@ -35,7 +32,6 @@ function runDemo4() {
   debugger
   const array = cloneDeep(users)
   const newArray = dropWhile(users, 'active')
-  console.log(array)
   console.log(newArray)
 }
 

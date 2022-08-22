@@ -5,7 +5,6 @@ function runDemo1() {
   debugger
   const array = [1, 2, 1, 2]
   const newArray = lastIndexOf(array, 2)
-  console.log(array)
   console.log(newArray)
 }
 
@@ -13,7 +12,6 @@ function runDemo2() {
   debugger
   const array = [1, 2, 1, 2]
   const newArray = lastIndexOf(array, 2, 2)
-  console.log(array)
   console.log(newArray)
 }
 

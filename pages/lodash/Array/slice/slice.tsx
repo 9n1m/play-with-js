@@ -5,7 +5,6 @@ function runDemo1() {
   debugger
   const array = ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango']
   const newArray = slice(array, 1, 3)
-  console.log(array)
   console.log(newArray)
 }
 

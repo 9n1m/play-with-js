@@ -5,7 +5,6 @@ function runDemo1() {
   debugger
   const array = [1, 2, 3]
   const element = head(array)
-  console.log(array)
   console.log(element)
 }
 
@@ -13,7 +12,6 @@ function runDemo2() {
   debugger
   const array: List<any> = []
   const element = head(array)
-  console.log(array)
   console.log(element)
 }
 

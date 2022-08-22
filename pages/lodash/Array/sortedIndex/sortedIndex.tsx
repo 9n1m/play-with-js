@@ -5,7 +5,6 @@ function runDemo1() {
   debugger
   const array = [30, 50]
   const newArray = sortedIndex(array, 40)
-  console.log(array)
   console.log(newArray)
 }
 

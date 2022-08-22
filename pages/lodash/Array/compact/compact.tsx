@@ -5,7 +5,6 @@ function runDemo1() {
   debugger
   const array = [0, 1, false, 2, '', 3]
   const newArray = compact(array)
-  console.log(array)
   console.log(newArray)
 }
 

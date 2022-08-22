@@ -5,7 +5,6 @@ function runDemo1() {
   debugger
   const array = [1, 2, 3]
   const newArray = initial(array)
-  console.log(array)
   console.log(newArray)
 }
 

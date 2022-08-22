@@ -5,7 +5,6 @@ function runDemo1() {
   debugger
   const array = [[2, 1], [4, 2], [1, 2]]
   const newArray = intersection(...array)
-  console.log(array)
   console.log(newArray)
 }
 
