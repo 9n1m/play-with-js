@@ -1,18 +1,18 @@
 import type { NextPage } from 'next'
-import { add, unzipWith, zip } from 'lodash'
+import { defer } from 'lodash'
 
 function runDemo1() {
-  debugger
-  const zipped = zip([1, 2], [10, 20], [100, 200]) as number[][]
-  console.log(zipped)
-  const newArray = unzipWith(zipped, add)
-  console.log(newArray)
+  const id = defer(function(text) {
+    console.log(text)
+  }, 'deferred')
+
+  console.log(id)
 }
 
 const Page: NextPage = () => {
   return (
     <>
-      <h2 className='title'>unzipWith</h2>
+      <h2 className='title'>defer</h2>
       <div className='block buttons'>
         <button className='button is-primary' onClick={() => runDemo1()}>runDemo1</button>
       </div>

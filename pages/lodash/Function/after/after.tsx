@@ -1,18 +1,19 @@
 import type { NextPage } from 'next'
-import { add, unzipWith, zip } from 'lodash'
+import { after } from 'lodash'
+
+const done = after(3, function () {
+  console.log('done saving!')
+})
 
 function runDemo1() {
-  debugger
-  const zipped = zip([1, 2], [10, 20], [100, 200]) as number[][]
-  console.log(zipped)
-  const newArray = unzipWith(zipped, add)
-  console.log(newArray)
+  console.log('run!')
+  done()
 }
 
 const Page: NextPage = () => {
   return (
     <>
-      <h2 className='title'>unzipWith</h2>
+      <h2 className='title'>after</h2>
       <div className='block buttons'>
         <button className='button is-primary' onClick={() => runDemo1()}>runDemo1</button>
       </div>

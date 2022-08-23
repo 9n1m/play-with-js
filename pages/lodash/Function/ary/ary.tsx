@@ -1,18 +1,19 @@
 import type { NextPage } from 'next'
-import { add, unzipWith, zip } from 'lodash'
+import { ary, map } from 'lodash'
 
 function runDemo1() {
   debugger
-  const zipped = zip([1, 2], [10, 20], [100, 200]) as number[][]
-  console.log(zipped)
-  const newArray = unzipWith(zipped, add)
-  console.log(newArray)
+  const result1 = map(['6', '8', '10'], parseInt)
+  console.log(result1)
+
+  const result2 = map(['6', '8', '10'], ary(parseInt, 1))
+  console.log(result2)
 }
 
 const Page: NextPage = () => {
   return (
     <>
-      <h2 className='title'>unzipWith</h2>
+      <h2 className='title'>ary</h2>
       <div className='block buttons'>
         <button className='button is-primary' onClick={() => runDemo1()}>runDemo1</button>
       </div>
