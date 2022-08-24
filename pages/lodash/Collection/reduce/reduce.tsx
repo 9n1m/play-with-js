@@ -12,6 +12,7 @@ function runDemo1() {
 function runDemo2() {
   debugger
   const accumulatedValue = reduce({ 'a': 1, 'b': 2, 'c': 1 }, function (result, value, key) {
+    // @ts-ignore
     (result[value] || (result[value] = [])).push(key)
     return result
   }, {})

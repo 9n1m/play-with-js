@@ -1,20 +1,20 @@
 import type { NextPage } from 'next'
-import { reduceRight } from 'lodash'
+import { isMatch } from 'lodash'
 
 function runDemo1() {
   debugger
-  const array = [[0, 1], [2, 3], [4, 5]]
-  const accumulatedValue = reduceRight(array, function (flattened, other) {
-    // @ts-ignore
-    return flattened.concat(other)
-  }, [])
-  console.log(accumulatedValue)
+  const object = { 'a': 1, 'b': 2 }
+  const res1 = isMatch(object, { 'b': 2 })
+  console.log(res1)
+
+  const res2 = isMatch(object, { 'b': 1 })
+  console.log(res2)
 }
 
 const Page: NextPage = () => {
   return (
     <>
-      <h2 className='title'>reduceRight</h2>
+      <h2 className='title'>isMatch</h2>
       <div className='block buttons'>
         <button className='button is-primary' onClick={() => runDemo1()}>runDemo1</button>
       </div>
